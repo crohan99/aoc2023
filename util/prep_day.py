@@ -4,20 +4,25 @@ import os
 
 """
 Carson Rohan
-AOC2022
+AOC 2023
 Module for creating necessary day files and getting input because I'm lazy.
 """
 
 STATUS_OK = 200
-AOC_INPUT_URL = 'https://adventofcode.com/2022/day/?/input'
-URL = 'https://adventofcode.com/2022'
+AOC_INPUT_URL = 'https://adventofcode.com/2023/day/?/input'
+URL = 'https://adventofcode.com/2023'
+# your info here
 COOKIES = {
     'ru': 'userstring',
-    'session': 'cookiestring'
+    'session':
+        '53616c7465645f5f1c45816137d09dc77da81d740eda4d4b0c53727a2f5dc1aabe0194b1987f54714343e5fcbe668139e5e9f892a80caac8b71e8d4aec49f035'
 }
 
 INPUT_SIZE = 2
-DAY_TEMPLATE = '"""\nCarson Rohan\nAOC2022\nDay ?: Name_of_puzzle\n"""\n\nimport os\n\nFILE_NAME = \'d?i.txt\'\n\ndef main():\n\n\twith open(os.path.join(os.path.dirname(os.path.abspath(__file__)), FILE_NAME)) as input:\n\t\tfileInput = input.readlines()\n\t\treturn 0\n\nclass Part1:\n\n\tdef blah():\n\t\treturn 0\n\nclass Part2:\n\n\tdef blah():\n\t\treturn 0\n\nif __name__ == \'__main__\':\n\tmain()'
+DAY_TEMPLATE = ('"""\nCarson Rohan\nAOC 2023\nDay ?: Name_of_puzzle\n"""\n\nimport os\n\nFILE_NAME = \'d?i.txt\'\n\n'
+                'def main():\n\n\twith open(os.path.join(os.path.dirname(os.path.abspath(__file__)), FILE_NAME)) '
+                'as input:\n\t\tfileInput = input.readlines()\n\t\treturn 0\n\ndef part1():\n\t'
+                'return 0\n\ndef part2():\n\treturn 0\n\nif __name__ == \'__main__\':\n\tmain()')
 
 def main():
 

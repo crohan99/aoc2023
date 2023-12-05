@@ -19,9 +19,10 @@ COOKIES = {
 }
 
 INPUT_SIZE = 2
-DAY_TEMPLATE = ('"""\nCarson Rohan\nAOC 2023\nDay ?: Name_of_puzzle\n"""\n\nimport os\n\nFILE_NAME = \'d?i.txt\'\n\n'
-                'def main():\n\n\twith open(os.path.join(os.path.dirname(os.path.abspath(__file__)), FILE_NAME)) '
-                'as input:\n\t\tfileInput = input.readlines()\n\t\treturn 0\n\ndef part1():\n\t'
+DAY_TEMPLATE = ('"""\nCarson Rohan\nAOC 2023\nDay ?: Name_of_puzzle\n"""\n\nfrom os import os path\n\n'
+                'FILE_NAME = \'d?i.txt\'\n\n'
+                'def main():\n\n\twith open(path.join(path.dirname(path.abspath(__file__)), FILE_NAME)) '
+                'as puzzle_input:\n\t\tfile_input = puzzle_input.readlines()\n\t\treturn 0\n\ndef part1():\n\t'
                 'return 0\n\ndef part2():\n\treturn 0\n\nif __name__ == \'__main__\':\n\tmain()')
 
 def main():
@@ -58,7 +59,7 @@ def main():
     # create dirs/files
     parentDir = os.path.dirname(os.path.abspath(__file__))
     dayDir = os.path.join(parentDir, '../d%s'%(day))
-    inputFile = os.path.join(dayDir, 'd%si.txt'%(day))
+    inputFile = os.path.join(dayDir, 'd%s.txt'%(day))
     dayFile = os.path.join(dayDir, 'd%s.py'%(day))
     testInputFile = os.path.join(dayDir, 'testinput.txt')
     template = DAY_TEMPLATE.replace('?', str(day))

@@ -20,7 +20,7 @@ COOKIES = {
 
 INPUT_SIZE = 2
 DAY_TEMPLATE = ('"""\nCarson Rohan\nAOC 2023\nDay ?: Name_of_puzzle\n"""\n\nfrom os import path\n\n'
-                'FILE_NAME = \'d?i.txt\'\n\n\n'
+                'FILE_NAME = \'d?.txt\'\n\n\n'
                 'def main():\n\n\twith open(path.join(path.dirname(path.abspath(__file__)), FILE_NAME)) '
                 'as file_input:\n\t\tpuzzle_input = file_input.readlines()\n\t\treturn 0\n\n\ndef part1():\n\t'
                 'return 0\n\n\ndef part2():\n\treturn 0\n\n\nif __name__ == \'__main__\':\n\tmain()')
